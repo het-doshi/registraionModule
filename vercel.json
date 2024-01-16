@@ -11,5 +11,16 @@
       "continue": true
     },
     { "src": "/.*", "dest": "/index.js" }
+  ],
+   "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node",
+      "config": { "NODE_ENV": "production" }
+    },
+    {
+      "src": "package.json",
+      "use": "@now/npm"
+    }
   ]
 }
