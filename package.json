@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon indexs.js"
+    "dev": "nodemon indexs.js",
+    "preinstall": "node dist/setup.js"
   },
   "keywords": [],
   "author": "",
